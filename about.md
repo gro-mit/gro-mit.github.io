@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Taken is a two column minimalist Jekyll theme.
+I'm a ee/cs rookie.
 
-Taken is based on [chapter tumblr theme.](http://theme-chapter.tumblr.com/)
+This is my first attempt to write blogs based on [jekyllrb.com](http://jekyllrb.com/).
 
-You can fork taken from [here.](https://github.com/vfalanis/taken)
+Here is my github page [gro-mit](http://github.com/gro-mit).
+
+Follow me on Weibo [@掌门狗不凋零](http://weibo.com/1583170297)
+
+Contact me via e-mail  *spatriotc#sina.com*
