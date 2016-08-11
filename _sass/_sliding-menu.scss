@@ -9,10 +9,10 @@
 .slide {
     transform: translateX(-100%);
     @include media($medium) {
-      transform: translateX(em(-600));
+      transform: translateX(em(-350));
     }
     @include media($large) {
-      transform: translateX(em(-900));
+      transform: translateX(em(-500));
     }
   }
 
@@ -44,10 +44,10 @@
     background: $black;
     transform: translateX(0); /* don't slide close button on small screens only */
     @include media($medium) {
-      transform: translateX(em(-400)); /* reset slide position */
+      transform: translateX(em(-350)); /* reset slide position */
     }
     @include media($large) {
-      transform: translateX(em(-600)); /* reset slide position */
+      transform: translateX(em(-500)); /* reset slide position */
     }
   }
 }
@@ -66,10 +66,10 @@
   text-align: left;
   @include size(100% 100%);
   @include media($small) {
-    width: em(400);
+    width: em(350);
   }
   @include media($large) {
-    width: em(600);
+    width: em(500);
   }
   transform: translateX(100%);
   transition: $sliding-menu-animation;
@@ -83,7 +83,7 @@
     transform: translateX(0);
   }
   h5 {
-    margin: 0 10% 0 7%;
+    margin: 3% 10% 5% 7%;
     @include media($large) {
       margin-right: 20%;
     }
