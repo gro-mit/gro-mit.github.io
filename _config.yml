@@ -5,7 +5,7 @@ description: "start from here"
 logo: icon.jpg # 120x120 px default image used for Twitter summary card
 teaser: teaser.jpg # 400x250 px default teaser image used in image archive grid
 locale: en
-url: http://gro-mit.github.io
+url:
 feed:
   path: atom.xml
 
@@ -22,6 +22,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+
 
 # Site owner
 owner:
