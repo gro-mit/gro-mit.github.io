@@ -22,7 +22,7 @@ locales:
     toc: "目录"
     written_by: "手记"
     updated: "更新"
-    share: "分享"
+    share: "分享到"
   cn_CN:
     <<: *DEFAULT_EN     # use English translation for en_US
 
