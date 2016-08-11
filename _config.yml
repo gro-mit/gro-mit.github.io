@@ -1,20 +1,64 @@
-# Site settings
-title: sun raise here
-email: spatriotc@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
+# Site wide configuration
 
-# Sidebar settings
-description: ee/cs rookie
+title: "gromit's blog"
+description: "start from here"
+logo: icon.jpg # 120x120 px default image used for Twitter summary card
+teaser: teaser.jpg # 400x250 px default teaser image used in image archive grid
+locale: en
+url:
+feed:
+  path: atom.xml
 
-# Social icons
-facebook: username
-linkedin: username
-github: username
-deviantart: username
-codepen: username
+# Jekyll configuration
 
-footer: © Taken theme
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-# Build settings
-markdown: kramdown
+
+# Site owner
+owner:
+  name: gromit
+  email: spatriotc@gmail.com
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio:
+  avatar: icon.jpg # 160x160 px image for author byline
+  disqus-shortname: gromit
+
+
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

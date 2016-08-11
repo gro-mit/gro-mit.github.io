@@ -1,0 +1,13 @@
+# Footer navigation links
+
+- title: Home
+  url: /
+
+- title: Articles
+  url: /articles/
+
+- title: Jekyll
+  url: /jekyll/
+
+- title: About
+  url: /about/ 

@@ -1,0 +1,21 @@
+# Site navigation links
+
+- title: Home
+  url: /
+  excerpt:
+  image:
+
+- title: Articles
+  url: /articles/
+  excerpt:
+  image:
+
+- title: Jekyll
+  url: /jekyll/
+  excerpt:
+  image:
+
+- title: About
+  url: /about/ 
+  excerpt:
+  image:
