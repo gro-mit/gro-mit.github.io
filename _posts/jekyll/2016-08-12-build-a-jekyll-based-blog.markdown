@@ -15,13 +15,13 @@ image:
 
 ##### 1.1 在github上创建github pages blog仓库
 
-登陆github页面，点击新建repository，显示如下图，输入repository名称、描述。作为一个规范的项目，还需勾选初始化README，以便他人更好地了解你的项目。
+登陆github页面，点击新建repository，显示如下图，输入repository名称(以`username.github.io`的格式，这也就是你站点的url)、描述。作为一个规范的项目，还需勾选初始化README，以便他人更好地了解你的项目。
 
-![pic]({{ site.url }}/images/jekyll/build-a-jekyll-based-blog/shot1.png)
+![pic]({{ site.url }}/images/jekyll/201608/shot1.png)
 
 在建立好的repository页面打开 `Settings`，找到如下图板块，并点击 `Lunch automatic page generator`，依次点击 `Continue to layouts`、`Publish page`就可以生成相应的站点，输入对应的url即可进行访问。
 
-![pic]({{ site.url }}/images/jekyll/build-a-jekyll-based-blog/shot2.png)
+![pic]({{ site.url }}/images/jekyll/201608/shot2.png)
 
 以上就完成了在github上建立repository并自动生成博客站点的任务。
 
@@ -114,13 +114,74 @@ $ jekyll serve
 #  browse to url http://localhost:4000
 ```
 
-在浏览器中访问如上url，显示如下：
+在浏览器中访问如上url，显示如下就证明本地jekyll站点搭建成功：
 
-![pic]({{ site.url }}/images/jekyll/build-a-jekyll-based-blog/shot3.png)
+![pic]({{ site.url }}/images/jekyll/201608/shot3.png)
 
-##### 2.3 jekyll搬家
+##### 2.3 jekyll站点目录结构与相关设置
+
+jekyll的站点的目录结构如下：
+
+```bssh
+.
+├── _config.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.textile
+|   └── on-simplicity-in-technology.markdown
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   └── 2009-04-26-barcamp-boston-4-roundup.textile
+├── _data
+|   └── members.yml
+├── _site
+├── .jekyll-metadata
+└── index.html
+└── images
+```
+
+|文件(夹)|说明|
+|:---:|---|
+|`_config.yml`|存储站点的配置信息，可修改博客title等信息。|
+|`_drafts`|用于保存未发布的博文，非必选|
+|`_includes`|约等于“头文件”，在该文件夹保存的文件可被{% raw %}`{% include filename.ext %}`{% endraw %}标记形式引用在博文或者页面中。|
+|`_layouts`|模板文件，例如博文及博文目录的板式等。|
+|`_posts`|用于保存博文，文件命名规则依照`YYYY-MM-DD-title.markdown`，使用markdown撰写正文之前需要在文件中参照YAML格式设定头信息，如图所示：![pic]({{ site.url }}/images/jekyll/201608/shot4.png) |
+|`_data`|用于保存特定形式的站点数据。|
+|`_site`|可以理解为存放jekyll在站点修改更新后“编译”的文件|
+|`images`|存放站点的资源文件如图片等，非必选。|
+|其它|`css`文件夹存放css样式；`favicon.ico`存放于根目录，是站点在浏览器tab页的图标，可以使用`.png`或`.jpg`文件修改扩展名得到。|
+
+##### 2.4 jekyll主题
+
+jekyll的博客主题有很多，下面是较常用的主题网站：
+
+* [github.com/jekyll/jekyll/wiki][theme 1]
+
+* [jekyllthemes.org][theme 2]
+
+* [themes.jekyllrc.org][theme 3]
+
+在选好喜欢的主题后，可以选择将该主题的`.zip`文件下载，或者从github上将其clone下来，并将其根目录中的非隐藏文件全部替换到自己的的博客根目录中(隐藏文件是主题的git信息，需要忽略)，进行个性化设置,并执行如下命令查看模板：
+
+```bash
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+如果仅通过`jekyll serve`启动服务则会报错，因为模板通过bundle安装独立的依赖环境，在以后的个性化修改环节中择可以使用`jekyll serve`启动服务。
+
+##### 2.5 jekyll搬家
 
 现在将之前clone到本机的repository文件夹内的非隐藏除README文件的其他文件删除，并将在本机搭建好的站点文件夹内的所有文件复制到repository文件夹内，使用git将其push到github上，就可以通过github网址访问博客了。
+
+#### 3 后记
+以上就初步地完成了基于jekyll和github的博客搭建。这里需要说明的是，对于目录中结构的相关设定，可以去jekyll官网查看英文文档。也可以自己尝试修改，查看相关变化慢慢摸索jekyll的各部分功能。我所使用的博客模板源于[SKINNY BONES][skinny bones]。里面的较为详细的主题安装以及个性化设置的说明，有助于更好地了解jekyll。现在我们就可以开始在本机写博客了，之后提交到github上就完成了博客更新。
 
 
 
@@ -132,3 +193,7 @@ $ jekyll serve
 [gem]: https://rubygems.org/pages/download
 [nodejs]: https://nodejs.org/en/download/
 [python]: https://www.python.org/downloads/
+[theme 1]: https://github.com/jekyll/jekyll/wiki
+[theme 2]: http://jekyllthemes.org/
+[theme 3]: http://themes.jekyllrc.org/
+[skinny bones]: https://mmistakes.github.io/skinny-bones-jekyll/
