@@ -2,7 +2,7 @@
 layout: article
 title:  start from here
 date:   2016-08-10
-categories: notes
+categories: articles
 image:
  teaser: startup.jpg
 ---

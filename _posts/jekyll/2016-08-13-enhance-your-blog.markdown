@@ -50,7 +50,12 @@ disqus博文评论功能添加和analytics类似。首先，需要在[disqus][di
 
 ![pic]({{ site.url }}/images/jekyll/201608/shot8.png)
 
-以上就完成了社交评论的引入，需要说明的是，disqus支持disqus、facebook、twitter和google账号，为了使用微博、微信等国内的账号登陆，可以使用[友言][youyan]、[多说][duoshuo]和[搜狐畅言][changyan]等社会化评论工具。
+以上就完成了社交评论的引入，需要说明的是，disqus支持disqus、facebook、twitter和google账号(注：非vpn下disqus评论模块无法显示)，为了使用微博、微信等国内的账号登陆，可以使用[友言][youyan]、[多说][duoshuo]和[搜狐畅言][changyan]等社会化评论工具。
+
+注：其实SKINNY BONES主题已内嵌了disqus功能，如需开启，操作如下：
+
+![pic]({{ site.url }}/images/jekyll/201608/shot9.png)
+
 
 
 [analytics]: https://analytics.google.com
