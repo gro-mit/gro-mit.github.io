@@ -14,6 +14,5 @@ Here is my github page ***[gro-mit](https://github.com/gro-mit)***.
 
 Follow me on Weibo [@掌门狗不凋零](http://weibo.com/1583170297)
 
-Contact me via e-mail   ***[spatriotc@gmail.com](mailto:spatriotc@gmail.com)***
-
+Contact me via e-mail   ***[spatriotc@gmail.com](mailto:spatriotc@gmail.com)*** or ***[csun@hit.edu.cn](mailto:csun@hit.edu.cn)
 ---
