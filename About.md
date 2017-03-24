@@ -15,7 +15,6 @@ excerpt: ee/cs rookie
 
 坐686吃果子蘸老豆腐长大.
 
-<<<<<<< HEAD
 闲七杂八的东西放在 ***[gro-mit](https://github.com/gro-mit)***,主要是为了托管博客.
 
 匿在知乎[@孙满](https://www.zhihu.com/people/gro_mit),矫情过,目前正经,极偶尔输出.
@@ -24,9 +23,6 @@ excerpt: ee/cs rookie
 
 联系 ***[spatriotc@gmail.com](mailto:spatriotc@gmail.com)*** 或 ***[csun@hit.edu.cn](mailto:csun@hit.edu.cn)***
 
-另外,博客用jekyll搭的,感谢如右 [jekyllrb](http://jekyllrb.com/).
-=======
-Contact me via e-mail   ***[spatriotc@gmail.com](mailto:spatriotc@gmail.com)*** or ***[csun@hit.edu.cn](mailto:csun@hit.edu.cn)***
->>>>>>> dd4686621ab2cec482c3367023c761223cbd1db9
+另外,博客用 [jekyllrb](http://jekyllrb.com/) 搭的,撒花.
 
 ---
