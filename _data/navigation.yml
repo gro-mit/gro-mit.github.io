@@ -10,6 +10,16 @@
   excerpt:
   image:
 
+- title: Thoughts
+  url: /thoughts/
+  excerpt:
+  image:
+
+- title: ML
+  url: /machinelearning/
+  excerpt:
+  image:
+
 - title: Jekyll
   url: /jekyll/
   excerpt:

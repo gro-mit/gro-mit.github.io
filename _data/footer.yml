@@ -6,6 +6,12 @@
 - title: Articles
   url: /articles/
 
+- title: Thoughts
+  url: /thoughts/
+
+- title: ML
+  url: /machinelearning/
+
 - title: Jekyll
   url: /jekyll/
 
